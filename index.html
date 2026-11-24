@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fit4yourhausarbeit – Quiz zur ersten Hausarbeit</title>
+<meta name="description" content="Quiz zu zweit zum wissenschaftlichen Schreiben: von der Fragestellung über Zitieren und KI bis zur Zeitplanung.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' role='img' aria-label='fit4yourhausarbeit' xmlns:c2pa='http://c2pa.org/manifest'%3E %3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E %3Cpath d='M18 12h20l10 10v26a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z' fill='%23fff'/%3E %3Cpath d='M38 12v10h10z' fill='%2399f6e4'/%3E %3Crect x='20' y='28' width='22' height='3' rx='1.5' fill='%230f766e' opacity='.45'/%3E %3Crect x='20' y='35' width='14' height='3' rx='1.5' fill='%230f766e' opacity='.45'/%3E %3Crect x='20' y='42' width='10' height='3' rx='1.5' fill='%230f766e' opacity='.45'/%3E %3Ccircle cx='46' cy='46' r='12' fill='%23f59e0b'/%3E %3Cpath d='M40 46l4.5 4.5L52 42' stroke='%23fff' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E %3Cmetadata%3E%3Cc2pa:manifest%3EAAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmMmI3YmVlOS1lNjI1LTQwNjItODEwNS02Mjg4OTBkMTAyODgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaPpnrJxbS9nBMmc74svyqy4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozZGYxNGJkYy03NmUzLTRiMzYtYTc3Yy0zODEyZDA2ZTMyYWJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo96LT887nKSC8JpS3uYpV7wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggVZo9X8wV+tIOzYLg2IxLJGH3dmp3JvOggAEyJL8Clt6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMZWIXiadhFh5dfzJnPHrJAAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIHj0iyx0zWxCVOR3wREiT2haxnDyJF+fXUbLY5ZdW1epZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQMVZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmYyYjdiZWU5LWU2MjUtNDA2Mi04MTA1LTYyODg5MGQxMDI4OC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjNjNmNmNzk3LTg4M2UtNDJiYS04NWI3LTllYTkwNTJmNzc2MXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBVmj1fzBX60g7NguDYjEskYfd2ancm86CAATIkvwKW3qJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggWb5uH34dXFfGV1u+xnbU1DZgdy21tN7JWnntI7c+ZymiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggqtV6FtDTV0q/XFsYtTCx726IXXbLf6sWIihwhtM4LJl0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQD1FTrvATaDGvGY6D87HwcrV1TT77pu/O599hsVqdHpPMoHAkJrrpkzapCfgPdgmZraVmABHb/5AzBARGwdpbAI=%3C/c2pa:manifest%3E%3C/metadata%3E%3C/svg%3E ">
+<style>
+:root{--bg:#f8fafc;--card:#fff;--ink:#1f2937;--mute:#556070;--teal:#0f766e;--amber:#f59e0b;--line:#dbe3ea;--soft:#e6f4f2}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1720;--card:#16212c;--ink:#e5eaf0;--mute:#a3b0bf;--teal:#5eead4;--amber:#fbbf24;--line:#2a3a49;--soft:#15332f}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header{background:var(--card);border-bottom:1px solid var(--line)}
+.wrap{max-width:800px;margin:0 auto;padding:0 18px}
+.brand{display:flex;align-items:center;gap:14px;padding:16px 0}
+.brand svg{width:52px;height:52px;flex:none}
+.wm{font-size:1.75rem;font-weight:700;letter-spacing:-.01em}
+.wm b{color:var(--amber)} .wm i{font-style:normal;color:var(--teal)}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+nav a{flex:none;min-width:34px;text-align:center;padding:3px 8px;border-radius:8px;border:1px solid var(--line);color:var(--teal);text-decoration:none;font-weight:600;font-size:.9rem}
+nav a:hover{background:var(--soft)}
+nav button{flex:none;margin-left:auto;font:inherit;font-size:.85rem;padding:4px 10px;border-radius:8px;border:1px solid var(--teal);background:transparent;color:var(--teal);cursor:pointer}
+main{max-width:800px;margin:0 auto;padding:10px 18px 60px}
+h1{font-size:1.9rem;line-height:1.25;margin:1.2em 0 .3em}
+h2{font-size:1.35rem;line-height:1.3;margin:0 0 .6em;color:var(--teal)}
+h3{font-size:1.1rem}
+hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}
+a{color:var(--teal)}
+ul,ol{padding-left:1.3em} li{margin:.25em 0}
+blockquote{margin:1em 0;padding:.6em 1em;border-left:4px solid var(--amber);background:var(--card);border-radius:0 8px 8px 0}
+.tw{overflow-x:auto;margin:1em 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+details{margin:1.1em 0;border:1px solid var(--teal);border-radius:10px;background:var(--card)}
+summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--teal)}
+details[open] summary{border-bottom:1px solid var(--line)}
+.sol{padding:4px 16px 10px}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:20px}
+
+ul.opts{list-style:none;padding-left:0}
+ul.opts li{margin:.35em 0;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+ul.opts label{display:block;cursor:pointer}
+ul.opts input{margin-right:8px;transform:scale(1.2)}
+li.ok{border-color:#16a34a!important;background:rgba(22,163,74,.12)!important}
+li.bad{border-color:#dc2626!important;background:rgba(220,38,38,.12)!important}
+li.miss{border-color:#d97706!important;border-style:dashed!important}
+select{font:inherit;font-size:.9rem;margin-left:6px;padding:2px 6px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:100%}
+select.ok{border-color:#16a34a;background:rgba(22,163,74,.15)}
+select.bad{border-color:#dc2626;background:rgba(220,38,38,.15)}
+.chkbar{margin:1em 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chkbar button{font:inherit;padding:6px 14px;border-radius:8px;border:1px solid var(--teal);background:var(--teal);color:#fff;cursor:pointer}
+.chkbar .rst{background:transparent;color:var(--teal)}
+.res{font-weight:600}
+
+@media print{nav,header button{display:none}details{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="fit4yourhausarbeit" xmlns:c2pa="http://c2pa.org/manifest">
+  <rect width="64" height="64" rx="14" fill="#0f766e"/>
+  <path d="M18 12h20l10 10v26a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z" fill="#fff"/>
+  <path d="M38 12v10h10z" fill="#99f6e4"/>
+  <rect x="20" y="28" width="22" height="3" rx="1.5" fill="#0f766e" opacity=".45"/>
+  <rect x="20" y="35" width="14" height="3" rx="1.5" fill="#0f766e" opacity=".45"/>
+  <rect x="20" y="42" width="10" height="3" rx="1.5" fill="#0f766e" opacity=".45"/>
+  <circle cx="46" cy="46" r="12" fill="#f59e0b"/>
+  <path d="M40 46l4.5 4.5L52 42" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmMmI3YmVlOS1lNjI1LTQwNjItODEwNS02Mjg4OTBkMTAyODgAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaPpnrJxbS9nBMmc74svyqy4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozZGYxNGJkYy03NmUzLTRiMzYtYTc3Yy0zODEyZDA2ZTMyYWJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo96LT887nKSC8JpS3uYpV7wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggVZo9X8wV+tIOzYLg2IxLJGH3dmp3JvOggAEyJL8Clt6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaMZWIXiadhFh5dfzJnPHrJAAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIHj0iyx0zWxCVOR3wREiT2haxnDyJF+fXUbLY5ZdW1epZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQMVZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmYyYjdiZWU5LWU2MjUtNDA2Mi04MTA1LTYyODg5MGQxMDI4OC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjNjNmNmNzk3LTg4M2UtNDJiYS04NWI3LTllYTkwNTJmNzc2MXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBVmj1fzBX60g7NguDYjEskYfd2ancm86CAATIkvwKW3qJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggWb5uH34dXFfGV1u+xnbU1DZgdy21tN7JWnntI7c+ZymiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggqtV6FtDTV0q/XFsYtTCx726IXXbLf6sWIihwhtM4LJl0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQD1FTrvATaDGvGY6D87HwcrV1TT77pu/O599hsVqdHpPMoHAkJrrpkzapCfgPdgmZraVmABHb/5AzBARGwdpbAI=</c2pa:manifest></metadata></svg>
+<div class="wm">fit<b>4</b>your<i>hausarbeit</i></div></div></div></header>
+<nav aria-label="Fragen"><div class="wrap"><a href="#frage-1">1</a><a href="#frage-2">2</a><a href="#frage-3">3</a><a href="#frage-4">4</a><a href="#frage-5">5</a><a href="#frage-6">6</a><a href="#frage-7">7</a><a href="#frage-8">8</a><a href="#frage-9">9</a><a href="#frage-10">10</a><a href="#frage-11">11</a><a href="#frage-12">12</a><a href="#frage-13">13</a><a href="#frage-14">14</a><a href="#frage-15">15</a><button type="button" id="tg">Alle Lösungen auf/zu</button></div></nav>
+<main>
+<h1>Quiz zu den Grundlagen wissenschaftlichen Schreibens</h1>
+<hr />
+<h2>So arbeitest du mit dem Quiz</h2>
+<ol>
+<li><strong>Arbeite im Tandem.</strong> Ihr könnt die Fragen gemeinsam durchgehen oder einzeln und euch am Schluss austauschen. Klicke deine Antwort an und drücke dann „Antwort prüfen“. Erst danach öffnet sich die Erläuterung.</li>
+<li><strong>Das ist kein Test.</strong> Die Erläuterung ist der eigentliche Lerninhalt. Wenn du anders geantwortet hast: Notiere, warum du anders gedacht hast, und bringe das ins Plenum mit.</li>
+<li><strong>Deine Hochschule hat das letzte Wort.</strong> Das Quiz erklärt allgemeine Standards. Wo Dozierende, Modulhandbuch oder Prüfungsordnung etwas anderes verlangen (Zitierstil, KI-Regeln, Formales), gilt deren Vorgabe.</li>
+<li><strong>Zeitrahmen:</strong> 20–25 Min. Du hast also für jede Frage nur etwas mehr als 1 Minute und musst das Quiz zügig durcharbeiten. Lasst ggf. einzelne Teile weg, die zu lange dauern oder euch zu schwierig erscheinen. Tauscht euch dann lieber noch kurz darüber aus, was die Aufgabe schwierig macht.</li>
+</ol>
+<p>Beispiele, Studien- und Literaturangaben sind teilweise fiktiv und dienen lediglich der Übung.</p>
+<h3>Überblick</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nr.</th>
+<th>Thema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Was ist wissenschaftlich? Aufbau der Hausarbeit</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Rahmenbedingungen klären</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Vom Thema zur Fragestellung</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Fachliteratur finden und bewerten</td>
+</tr>
+<tr>
+<td>5</td>
+<td>KI-Recherche-Tools: Pro und Kontra</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Lesen, Exzerpieren und Texthandlungen</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Direkte und indirekte Zitate</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Intertextuelle Fehler erkennen</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Zitierstil APA 7</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Gliederungslogiken</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Textskelett und Kernaussage</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Überarbeiten: Inhalt – Sprache – Formales</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Schreibstrategien</td>
+</tr>
+<tr>
+<td>14</td>
+<td>KI im Schreibprozess</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Zeitplanung</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<section class="q"><h2 id="frage-1">Frage 1 · Was macht eine Hausarbeit wissenschaftlich?</h2>
+<p><strong>Teil A – Kreuze die vier Aussagen an, die zutreffen:</strong></p>
+<ul class="opts" data-ans="1,3,4,7"><ul>
+<li data-k="1"><label><input type="checkbox" name="g0" value="1"> <strong>(1)</strong> Eine Hausarbeit bearbeitet eine eingegrenzte Fragestellung systematisch.</label></li>
+<li data-k="2"><label><input type="checkbox" name="g0" value="2"> <strong>(2)</strong> Je mehr Literatur zusammengefasst wird, desto wissenschaftlicher ist die Arbeit.</label></li>
+<li data-k="3"><label><input type="checkbox" name="g0" value="3"> <strong>(3)</strong> Aussagen werden belegt und begründet, sodass Leser:innen sie nachprüfen können.</label></li>
+<li data-k="4"><label><input type="checkbox" name="g0" value="4"> <strong>(4)</strong> Die Arbeit knüpft an den Forschungsstand an und macht sichtbar, was von anderen stammt und was deine eigene Überlegung ist.</label></li>
+<li data-k="5"><label><input type="checkbox" name="g0" value="5"> <strong>(5)</strong> Je komplizierter formuliert wird, desto wissenschaftlicher klingt der Text – und desto besser.</label></li>
+<li data-k="6"><label><input type="checkbox" name="g0" value="6"> <strong>(6)</strong> Eine Hausarbeit gibt vor allem die persönliche Meinung der Verfasser:innen wieder.</label></li>
+<li data-k="7"><label><input type="checkbox" name="g0" value="7"> <strong>(7)</strong> Die Hausarbeit ist eine Lern- und Prüfungsform: Du zeigst, dass du dich eigenständig in einen Fachdiskurs einarbeiten und eine Frage nachvollziehbar beantworten kannst.</label></li>
+</ul></ul>
+<p><strong>Teil B – Bringe die Bausteine in die übliche Reihenfolge</strong> (Position 1 bis 6):</p>
+<ol>
+<li>Literaturverzeichnis <select data-ans="5"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></li>
+<li>Einleitung <select data-ans="2"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></li>
+<li>Titelblatt und Inhaltsverzeichnis <select data-ans="1"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></li>
+<li>Schluss/Fazit <select data-ans="4"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></li>
+<li>Eigenständigkeitserklärung <select data-ans="6"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></li>
+<li>Hauptteil <select data-ans="3"><option value="">–</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></li>
+</ol>
+<p>💬 <strong>Austauschimpuls:</strong> Welche Erwartung an „wissenschaftliches Schreiben“ hast du aus der Schule mitgebracht – und was davon trägt in der Hausarbeit nicht mehr?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Teil A:</strong> Richtig sind <strong>(1), (3), (4) und (7)</strong>. <strong>Teil B:</strong> Titelblatt und Inhaltsverzeichnis → Einleitung → Hauptteil → Schluss → Literaturverzeichnis → Eigenständigkeitserklärung (je nach Institut steht die Erklärung am Ende oder vor dem Verzeichnis).</p>
+<p><strong>Was ist „wissenschaftlich“?</strong> Sechs Merkmale:</p>
+<ul>
+<li><strong>a. Objektivität (Intersubjektivität):</strong> Du nimmst eine neutrale, analysierende Position ein und legst deine eigene Position dar. Arbeitsergebnisse und Vorgehen sind nachvollziehbar und überprüfbar.</li>
+<li><strong>b. Präzision:</strong> Der untersuchte Gegenstand ist klar bestimmt, benannt und eingegrenzt. Die Ergebnisse sind verständlich und eindeutig dargestellt, Fachbegriffe sind klar definiert, Abkürzungen werden erläutert.</li>
+<li><strong>c. Zuverlässigkeit (Reliabilität):</strong> Die Ergebnisse sind exakt erhoben. Alle Einflussfaktoren auf den Untersuchungsgegenstand werden berücksichtigt und beeinflussen den Forschungsverlauf nicht unkontrolliert. Das Vorgehen ist methodengeleitet.</li>
+<li><strong>d. Vollständigkeit:</strong> Die Informationsgrundlagen werden angemessen dargestellt. Unterschiedliche, auch gegensätzliche Forschungspositionen werden einbezogen. Alle Quellen sind benannt und überprüfbar.</li>
+<li><strong>e. Ethische Korrektheit:</strong> Forschung richtet sich an ethischen Standards aus.</li>
+<li><strong>f. Ehrlichkeit und Redlichkeit.</strong></li>
+</ul>
+<p><em>Quelle der Merkmale: Voss, R. (2026). Wissenschaftliches Arbeiten mit KI. UTB GmbH. https://doi.org/10.36198/9783838588629</em></p>
+<p>Menge (2), Fachjargon (5) oder bloße Meinung (6) machen eine Arbeit dagegen nicht wissenschaftlich. Die <strong>Fragestellung</strong> ist der rote Faden: Die Einleitung führt zu ihr hin, der Hauptteil bearbeitet sie, der Schluss beantwortet sie. Die Hausarbeit ist Prüfungsleistung und trainiert zugleich, was du im Lehrberuf brauchst: Fachwissen kritisch prüfen, begründet urteilen und Quellen verantwortungsvoll verwenden.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-2">Frage 2 · Rahmenbedingungen klären</h2>
+<p>Du hast dich für eine Hausarbeit im Seminar „Kinder- und Jugendliteratur“ (oder „Grammatik des Deutschen“) angemeldet. <strong>Welche vier</strong> der folgenden Punkte solltest du vor dem Schreiben mit der Betreuungsperson bzw. anhand der Modulunterlagen klären?</p>
+<ul class="opts" data-ans="1,2,3,4"><ul>
+<li data-k="1"><label><input type="checkbox" name="g1" value="1"> <strong>(1)</strong> Umfang, Abgabefrist und Abgabeform (z. B. Upload, Papier)</label></li>
+<li data-k="2"><label><input type="checkbox" name="g1" value="2"> <strong>(2)</strong> Welches Zitierverfahren verlangt wird (z. B. APA 7) und welche formalen Vorgaben gelten (Deckblatt, Schrift, Verzeichnisse)</label></li>
+<li data-k="3"><label><input type="checkbox" name="g1" value="3"> <strong>(3)</strong> Wie die Betreuung abläuft (Sprechstunde? Gliederung oder Exposé vorab?) und nach welchen Kriterien bewertet wird</label></li>
+<li data-k="4"><label><input type="checkbox" name="g1" value="4"> <strong>(4)</strong> Ob und wie KI-Tools genutzt werden dürfen und ob du KI-Nutzung kennzeichnen musst (z. B. in der Eigenständigkeitserklärung)</label></li>
+<li data-k="5"><label><input type="checkbox" name="g1" value="5"> <strong>(5)</strong> Welche Bücher die Betreuungsperson selbst geschrieben hat, damit sie sicher zitiert werden</label></li>
+<li data-k="6"><label><input type="checkbox" name="g1" value="6"> <strong>(6)</strong> Wie viele Seiten das Literaturverzeichnis mindestens haben muss, damit die Arbeit „gründlich“ wirkt</label></li>
+<li data-k="7"><label><input type="checkbox" name="g1" value="7"> <strong>(7)</strong> Ob vorab überhaupt jemand deinen Text lesen darf – das ist nie erlaubt</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Was fragt man ungern nach? Formuliere zu zweit eine höfliche Mail an eine Dozentin, die drei Rahmenfragen klärt.</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p>Richtig sind <strong>(1), (2), (3) und (4)</strong>.</p>
+<p><strong>Zu den falschen Aussagen:</strong> (5) Literatur wählst du nach Relevanz für deine Fragestellung, nicht nach Gefälligkeit. (6) Die Länge des Literaturverzeichnisses ist kein Qualitätsmerkmal – ein auffällig langes Verzeichnis mit Titeln, die im Text gar nicht vorkommen, gilt sogar als typischer Fehler (siehe Frage 8). (7) Rückmeldung von Kommiliton:innen oder Betreuenden einzuholen ist erlaubt und erwünscht (siehe Frage 14).</p>
+<p><strong>Erläuterung:</strong> Wer Rahmenbedingungen früh klärt, spart später viel Zeit und vermeidet unnötige Notenabzüge. Wichtig: <strong>Vorgaben deines Moduls und deiner Prüfungsordnung gehen allgemeinen Leitfäden immer vor.</strong> Tipp: Halte die Antworten schriftlich fest (z. B. kurze Bestätigungsmail), dann kannst du später darauf zurückgreifen.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-3">Frage 3 · Orientieren &amp; Planen: Vom Thema zur Fragestellung</h2>
+<p>Das Thema „Märchen im Deutschunterricht“ ist für eine erste Hausarbeit (ca. 10–15 Seiten) viel zu weit. <strong>Welche Formulierung ist als Fragestellung am tragfähigsten?</strong></p>
+<ul class="opts" data-ans="C"><ul>
+<li data-k="A"><label><input type="radio" name="g2" value="A"> <strong>A)</strong> Märchen in der Grundschule</label></li>
+<li data-k="B"><label><input type="radio" name="g2" value="B"> <strong>B)</strong> Alles über die Märchen der Brüder Grimm und ihre Wirkung bis heute</label></li>
+<li data-k="C"><label><input type="radio" name="g2" value="C"> <strong>C)</strong> Wie wird die Figur der Antagonistin in der Erstauflage (1812) und in der Auflage von 1857 des Grimm’schen Märchens „Schneewittchen“ dargestellt, und welche Unterschiede ergeben sich?</label></li>
+<li data-k="D"><label><input type="radio" name="g2" value="D"> <strong>D)</strong> Sind Märchen für Kinder gut oder schlecht?</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Mach dasselbe mit einem sprachlichen Thema: Wie lässt sich „Schreibentwicklung in der Grundschule“ zu einer eingrenzenden Fragestellung zuspitzen? Welches Material (Daten) bräuchtest du dafür?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>C) ist am tragfähigsten.</strong></p>
+<ul>
+<li><strong>A</strong> nennt einen Themenbereich, aber keine Frage.</li>
+<li><strong>B</strong> ist nicht eingrenzbar – das wären Bücher, keine Hausarbeit.</li>
+<li><strong>D</strong> ist wertend und lässt sich ohne Kriterien nicht wissenschaftlich beantworten.</li>
+<li><strong>C</strong> hat einen klaren Gegenstand (zwei Textfassungen), eine W-Frage, einen Vergleich als Ordnungsprinzip – und die Methode (vergleichende Textanalyse) ergibt sich fast von selbst.</li>
+</ul>
+<p><strong>Erläuterung:</strong> Auf dem Weg vom Thema zur Fragestellung helfen vier Stellschrauben:</p>
+<ul>
+<li><strong>Erkenntnisinteresse:</strong> Was willst du herausfinden – und warum ist das fachlich oder für den Unterricht interessant?</li>
+<li><strong>Daten/Material:</strong> Womit arbeitest du (Primärtexte, Schüler:innentexte, ein Korpus, Lehrwerke …)?</li>
+<li><strong>Methode:</strong> Wie gehst du vor (Textanalyse, Vergleich, qualitative Inhaltsanalyse …)?</li>
+<li><strong>Theorien/Begriffe:</strong> Welche Konzepte brauchst du, um das Material zu beschreiben (z. B. Gattungs- oder Erwerbsmodelle)?</li>
+</ul>
+<p>Eingrenzen kannst du über <strong>Material, Zeitraum oder Aspekt</strong>. Die Fragestellung darf sich während der Lektüre noch schärfen – wichtig ist, dass Einleitung, Hauptteil und Schluss am Ende zusammenpassen.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-4">Frage 4 · Recherchieren: Fachliteratur finden und bewerten</h2>
+<p><strong>Welche vier Aussagen zur Literaturrecherche stimmen?</strong></p>
+<ul class="opts" data-ans="1,2,4,6"><ul>
+<li data-k="1"><label><input type="checkbox" name="g3" value="1"> <strong>(1)</strong> Ein Handbuchartikel oder eine Einführung ist ein guter Einstieg, weil er Überblick und weiterführende Literatur bietet.</label></li>
+<li data-k="2"><label><input type="checkbox" name="g3" value="2"> <strong>(2)</strong> Das Literaturverzeichnis eines einschlägigen, aktuellen Aufsatzes ist ein Schlüssel zu weiterer Literatur („Schneeballsystem“).</label></li>
+<li data-k="3"><label><input type="checkbox" name="g3" value="3"> <strong>(3)</strong> Je mehr Treffer, desto besser – du solltest möglichst alle 1.000 Treffer einer Suche sichten.</label></li>
+<li data-k="4"><label><input type="checkbox" name="g3" value="4"> <strong>(4)</strong> Wikipedia und allgemeine Google-Recherche dienen lediglich einer ganz groben ersten Orientierung und sind nicht als wissenschaftliche Recherche geeignet.</label></li>
+<li data-k="5"><label><input type="checkbox" name="g3" value="5"> <strong>(5)</strong> Nur Literatur der letzten drei Jahre ist zitierfähig.</label></li>
+<li data-k="6"><label><input type="checkbox" name="g3" value="6"> <strong>(6)</strong> Du solltest Suchbegriffe variieren (Synonyme, Fach- und Alltagsbegriffe, ggf. englische Begriffe).</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Wähle ein Thema aus Frage 3. Welche fünf Suchbegriffe würdest du zuerst ausprobieren – und welche Datenbank oder welchen Katalog deiner Bibliothek würdest du als Erstes nutzen?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p>Richtig sind <strong>(1), (2), (4) und (6)</strong>.</p>
+<p><strong>Zu den falschen Aussagen:</strong> (3) Sichtet nicht alles, sondern verfeinert die Suche (Suchbegriffe, Filter) und prüft Titel und Abstract. (5) Aktualität hängt vom Fach und von der Frage ab: Forschungsklassiker und historische Texte sind selbstverständlich zitierfähig.</p>
+<p><strong>Erläuterung:</strong> Eine bewährte Reihenfolge: <strong>Überblick gewinnen</strong> (Handbuch, Einführung) → <strong>gezielt suchen</strong> (Bibliothekskatalog, Fachdatenbanken – für Sprach- und Literaturwissenschaft z. B. die <em>Bibliographie der deutschen Sprach- und Literaturwissenschaft (BDSL)</em>, für Didaktik z. B. <em>FIS Bildung/Fachportal Pädagogik</em>; welche Datenbanken deine Bibliothek lizenziert, zeigt deren Datenbank-Infosystem) → <strong>Schneeballsystem</strong> (Literaturverzeichnisse auswerten, in Google Scholar „zitiert von“ nutzen) → <strong>auswählen und prüfen</strong>.</p>
+<p>Zum Prüfen taugt der <strong>CRAAP-Test</strong>: <em>Currency</em> (Aktualität), <em>Relevance</em> (Relevanz), <em>Authority</em> (Autorität), <em>Accuracy</em> (Genauigkeit), <em>Purpose</em> (Zweck). Frage dich: Wer hat das geschrieben? Wo und von wem wurde es veröffentlicht? Wird belegt? Passt es zu meiner Fragestellung? Bibliotheken bieten außerdem Schulungen und Recherchesprechstunden an – nutzt das.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-5">Frage 5 · KI-Recherche-Tools: Pro und Kontra</h2>
+<p>Bibliotheken unterscheiden u. a. <strong>Finder</strong> (suchen Literatur, z. B. Elicit, Consensus, ScienceOS, SciSpace, Undermind) und <strong>Connector</strong> (zeigen von einem Ausgangstext, dem „Seed Paper“, aus Zitations- und Themennetzwerke, z. B. ResearchRabbit, Connected Papers, Litmaps).</p>
+<p><strong>Aufgabe:</strong> Ordne die folgenden Aussagen zu KI-Recherche-Tools für wissenschaftliche Paper zu – <strong>Pro</strong> (Stärke) oder <strong>Kontra</strong> (Schwäche/Risiko)?</p>
+<ol>
+<li>Du gewinnst schnell einen Überblick über ein Thema und große Forschungsschwerpunkte. <select data-ans="Pro"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Die Datenbasis ist oft ungeklärt: Inhalte stammen häufig aus Verlagspartnerschaften oder von Datenanbietern (z. B. bei Semantic Scholar). <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Grafische Darstellungen zeigen Zitationen, relevante Paper und mögliche Forschungslücken (Desiderata). <select data-ans="Pro"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Es dominieren Zeitschriftenartikel und Open-Access-Quellen; lizenzierte Journals und kostenpflichtige Paper fehlen oft, und die Qualität der Treffer ist ungeprüft. <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Du kannst die Recherche über Fragen in natürlicher Sprache beginnen (z. B. Elicit, Consensus). <select data-ans="Pro"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Es gibt Beschränkungen bei Papers in anderen Wissenschaftssprachen als Englisch. <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Annotierungsfunktionen und Zusammenfassungen (TL;DR mit Kernaussagen auf Basis von Titel, Abstract und Schlagwörtern) erleichtern das Sichten. <select data-ans="Pro"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Monografien kommen selten vor; es überwiegen englischsprachige Papers, Geisteswissenschaften sind schwächer abgedeckt. <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Teilweise gibt es Schnittstellen zu Zotero oder den Import von BibTeX- und RIS-Dateien (z. B. ResearchRabbit). <select data-ans="Pro"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Schwächen zeigen sich bei spezifischen oder innovativen Forschungsgebieten, einzelnen fachspezifischen Quellen, Aktualität und Datenzugriff. <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Teilweise werden auch Artikel hinter einer Paywall nachgewiesen und Textstellen oder Zitate aus Papers angezeigt. <select data-ans="Pro"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Die Tools sind fehleranfällig, eine Nachprüfung ist zwingend, und sie erfordern Vorwissen. <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+<li>Datenschutz und Urheberrecht müssen beachtet werden, besonders bei PDF-Chats. <select data-ans="Kontra"><option value="">–</option><option>Pro</option><option>Kontra</option></select></li>
+</ol>
+<p><strong>Abschlussfrage:</strong> Sind KI-Recherchetools ein <strong>Ersatz</strong> oder eine <strong>Ergänzung</strong> zu Katalog und Fachdatenbank?</p>
+<p>💬 <strong>Austauschimpuls:</strong> Hast du schon einmal eine Quelle angegeben bekommen, die es nicht gab (oder die etwas anderes sagte als behauptet)? Und: Wenn Tools vor allem englischsprachige Open-Access-Artikel finden, welche Literatur wird dann künftig häufiger gelesen und zitiert – und welche übersehen? Was bedeutet das für künftige Forschungsarbeiten?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Pro:</strong> 1, 3, 5, 7, 9, 11 · <strong>Kontra:</strong> 2, 4, 6, 8, 10, 12, 13</p>
+<p><strong>Fazit:</strong> Aktuell sind KI-Recherchetools eine <strong>Ergänzung anderer Recherchewege, kein Ersatz</strong>. Bibliotheken berichten, dass selbst die besten Tools oft nur ähnlich gute (oder schlechtere) Ergebnisse liefern wie Katalog und Fachdatenbanken.</p>
+<p><strong>Zu den Stärken:</strong> Besonders Connector-Tools sind in den Geisteswissenschaften hilfreich, weil sie von einem guten Ausgangstext ausgehen und Zitationsnetzwerke sichtbar machen. Sie funktionieren am besten mit Quellen, die eine DOI haben. Zu 11: Dass ein Artikel <em>nachgewiesen</em> wird, heißt nicht, dass du Zugriff auf den Volltext hast; viele Tools werten nur Titel und Abstract aus.</p>
+<p><strong>Zu den Schwächen:</strong></p>
+<ul>
+<li><strong>Datenbasis:</strong> Viele Finder greifen auf Semantic Scholar oder OpenAlex zurück, mit Schwerpunkt auf englischsprachigen Zeitschriftenartikeln aus Lebens- und Naturwissenschaften. Probleme gibt es weiterhin bei nicht englischsprachigen Monografien hinter Paywalls und in Geistes- und Sozialwissenschaften.</li>
+<li><strong>Allgemeine Chatbots</strong> mit Websuche und „Deep Research“ sind besser geworden, nennen aber oft nur wenige Titel, brauchen lange und fassen manche Texte falsch zusammen; früher erfanden sie Literaturangaben sogar vollständig. Prüfe jede Angabe im Katalog oder über die DOI.</li>
+<li><strong>Datenschutz und Urheberrecht:</strong> Bei einem Tool waren Suchanfragen zeitweise öffentlich sichtbar und über Google auffindbar. Gib keine personenbezogenen Daten Dritter ein und lädt keine urheberrechtlich geschützten PDFs hoch, wenn das Tool die Daten fürs Training nutzt. Eher datenschutzfreundlich sind laut Bibliothek z. B. ORKG Ask, Open Knowledge Maps und Local Citation Network.</li>
+</ul>
+<p><strong>So wählst du ein Tool:</strong> Welche Datenbank steckt dahinter, und enthält sie die Literatur, die ich brauche? Wie schneidet das Tool im Vergleich mit Katalog und Google Scholar ab? Welche Filter und Kosten hat es? Ist es datenschutzkonform? Muss ich mich anmelden?</p>
+<p><strong>Faustregel:</strong> <strong>Finden → Prüfen → Lesen → Belegen.</strong> Zitiert wird nie „das Tool“, sondern die Originalquelle, die du selbst eingesehen hast. KI-Nutzung ist je nach Modul oder Prüfungsordnung geregelt – im Zweifel nachfragen (Frage 14).</p>
+<p><em>Pro-/Kontra-Zusammenstellung nach Workshopunterlagen; ergänzt nach Lahrsow, M. &amp; Petrovska, L. (2025). Literaturrecherche mit KI – Tipps und Tools. Universität Tübingen. URL: https://www.oerbw.de/edu-sharing/components/render/cd3320da-2e5f-4be3-b320-da2e5fcbe3b6 (07.05.2025), CC BY 4.0, in eigenen Worten. Die Tool-Landschaft ändert sich schnell – bitte vor Veröffentlichung gegenprüfen.</em></p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-6">Frage 6 · Lesen und Exzerpieren: Was tut die Autorin?</h2>
+<p>Beim Lesen fragst du nicht nur: <em>Was steht da?</em>, sondern auch: <strong>Was tut die Autorin an dieser Stelle?</strong> Das nennt man <strong>Texthandlung</strong>.</p>
+<p><strong>Teil A – Welche fünf Verben beschreiben Texthandlungen, die wissenschaftliche Autor:innen in ihren Texten vornehmen?</strong></p>
+<ul class="opts" data-ans="2,3,5,6,8"><ul>
+<li data-k="1"><label><input type="checkbox" name="g4" value="1"> <strong>(1)</strong> überreden, ohne zu begründen</label></li>
+<li data-k="2"><label><input type="checkbox" name="g4" value="2"> <strong>(2)</strong> definieren</label></li>
+<li data-k="3"><label><input type="checkbox" name="g4" value="3"> <strong>(3)</strong> vergleichen</label></li>
+<li data-k="4"><label><input type="checkbox" name="g4" value="4"> <strong>(4)</strong> ausschmücken</label></li>
+<li data-k="5"><label><input type="checkbox" name="g4" value="5"> <strong>(5)</strong> argumentieren und begründen</label></li>
+<li data-k="6"><label><input type="checkbox" name="g4" value="6"> <strong>(6)</strong> referieren (Gedanken anderer in eigenen Worten wiedergeben)</label></li>
+<li data-k="7"><label><input type="checkbox" name="g4" value="7"> <strong>(7)</strong> unterhalten und amüsieren</label></li>
+<li data-k="8"><label><input type="checkbox" name="g4" value="8"> <strong>(8)</strong> erklären und darlegen</label></li>
+</ul></ul>
+<p><strong>Teil B – Welche Notiz ist als Grundlage für spätere Zitate am besten geeignet?</strong></p>
+<ul class="opts" data-ans="B"><ul>
+<li data-k="A"><label><input type="radio" name="g5" value="A"> <strong>A)</strong> Eine lange, mitgeschriebene Passage ohne Seitenzahl und ohne Anführungszeichen</label></li>
+<li data-k="B"><label><input type="radio" name="g5" value="B"> <strong>B)</strong> Stichwortartige Notiz mit Seitenzahl; wörtlich Übernommenes in Anführungszeichen, Paraphrasiertes und eigene Gedanken deutlich getrennt; bibliografische Angaben vollständig; ein Vermerk, wofür die Stelle wichtig ist</label></li>
+<li data-k="C"><label><input type="radio" name="g5" value="C"> <strong>C)</strong> Ein Foto der Seite, ohne weitere Notiz</label></li>
+<li data-k="D"><label><input type="radio" name="g5" value="D"> <strong>D)</strong> Eine KI-Zusammenfassung des Aufsatzes, ohne den Aufsatz zu lesen</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Wie hältst du beim Lesen Wörtliches, Paraphrasiertes und Eigenes auseinander (Farben, Spalten, Kürzel)?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Teil A:</strong> Richtig sind <strong>(2), (3), (5), (6) und (8)</strong>. Überreden ohne Begründung, Ausschmücken und Unterhalten gehören nicht zum wissenschaftlichen Schreiben.</p>
+<p>Weitere Texthandlungen: <em>berichten</em> (Leser:innen informieren, aufgrund welcher Quellen), <em>analysieren</em> (einen Sachverhalt oder Aussagen zergliedern), <em>werten, kommentieren, kritisieren, Position beziehen</em>, <em>interpretieren</em> und <em>Beispiele bringen</em>. Viele Studierende achten nur auf den Inhalt und nicht darauf, wie die Autorin an dieser Stelle <strong>handelt</strong>. Wer die Texthandlung erkennt, versteht den Text besser und kann ihn passender wiedergeben („Müller <em>definiert</em> …“, „Schmidt <em>kritisiert</em> …“). <em>(Nach Materialien einer Schreibberatung, Chemnitz – Quelle ergänzen.)</em></p>
+<p><strong>Teil B:</strong> <strong>B)</strong> ist die beste Wahl. Viele Zitierfehler entstehen schon beim <strong>Exzerpieren</strong>: Wenn später nicht mehr erkennbar ist, ob ein Satz wörtlich, umformuliert oder deine eigene Idee war, passieren leicht Scheinparaphrasen oder fehlende Belege (Frage 8). Also: Fundstelle (Autor:in, Jahr, Seite) zu jeder Notiz; drei Notiztypen trennen (wörtlich, sinngemäß, eigene Gedanken); bibliografische Angaben sofort erfassen, am besten mit einer Literaturverwaltung wie Zotero; den Bezug zur Fragestellung notieren. Exzerpieren ist zugleich Verstehensarbeit. Eine fremde KI-Zusammenfassung (D) ersetzt sie nicht.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-7">Frage 7 · Direkte und indirekte Zitate: Was ist was – und wofür?</h2>
+<p><strong>Teil A – Direktes oder indirektes Zitat?</strong></p>
+<ol>
+<li>Der Wortlaut wird übernommen, steht in Anführungszeichen und bekommt eine Seitenzahl. <select data-ans="direkt"><option value="">–</option><option>direkt</option><option>indirekt</option></select></li>
+<li>Der Inhalt wird mit eigenen Worten wiedergegeben (paraphrasiert). <select data-ans="indirekt"><option value="">–</option><option>direkt</option><option>indirekt</option></select></li>
+<li>Sinnvoll, wenn es auf den genauen Wortlaut ankommt (Definition, Textstelle, die du analysierst). <select data-ans="direkt"><option value="">–</option><option>direkt</option><option>indirekt</option></select></li>
+<li>Der Normalfall in Hausarbeiten, um Befunde und Argumente anderer zusammenzufassen. <select data-ans="indirekt"><option value="">–</option><option>direkt</option><option>indirekt</option></select></li>
+</ol>
+<p><strong>Formulierungshilfen für indirekte Zitate:</strong></p>
+<ul>
+<li>Müller (2023) belegt mit seiner Untersuchung, dass … (S. 241).</li>
+<li>Die Autorin vertritt die These, dass … Sie analysiert … (Schmidt, 2024, S. 45).</li>
+<li>Im Gegensatz zu Meyer (2025, S. 45) zeigt Seibert (2026, S. 76) nachvollziehbar, wie …</li>
+</ul>
+<p><strong>Teil B – Textausschnitt:</strong> Der folgende Textausschnitt stammt aus dem Basisbeitrag von Ursula Bredel, Seite 4, in der Zeitschrift „Praxis Deutsch“: Bredel, U. (2026). Handschreiben – Tastaturschreiben – Diktieren. <em>Praxis Deutsch, 53</em>(315), 4–11.</p>
+<blockquote>
+<p>„Der Basisartikel diskutiert wichtige historische, (lern-)theoretische und praktische Aspekte des Handschreibens, des Tastaturschreibens und des Diktierens. Dabei ist ein Ausflug in die frühen Lernjahre unerlässlich; denn die medialen Schreibfähigkeiten von Schülerinnen und Schülern in der weiterführenden Schule sind wesentlich von ihren Schreibbiographien geprägt, die immer auch eine politische Dimension haben. Informierte Unterstützungsangebote setzen deshalb Kenntnisse über den frühen Schrifterwerb in ihrer historischen Situierung voraus.“</p>
+</blockquote>
+<p><strong>Welche zwei Möglichkeiten sind korrekte direkte Zitate?</strong></p>
+<ul class="opts" data-ans="b,d"><ul>
+<li data-k="a"><label><input type="checkbox" name="g6" value="a"> <strong>(a)</strong> Bredel (2026) betont, „die medialen Schreibfähigkeiten von Schülerinnen und Schülern in der weiterführenden Schule sind wesentlich von ihren Schreibbiographien geprägt“.</label></li>
+<li data-k="b"><label><input type="checkbox" name="g6" value="b"> <strong>(b)</strong> Bredel (2026) hält fest, ein „Ausflug in die frühen Lernjahre“ sei „unerlässlich“ (S. 4).</label></li>
+<li data-k="c"><label><input type="checkbox" name="g6" value="c"> <strong>(c)</strong> „Informierte Unterstützungsangebote verlangen Kenntnisse über den frühen Schrifterwerb und dessen Geschichte“ (Bredel, 2026, S. 4).</label></li>
+<li data-k="d"><label><input type="checkbox" name="g6" value="d"> <strong>(d)</strong> „Informierte Unterstützungsangebote setzen deshalb Kenntnisse über den frühen Schrifterwerb in ihrer historischen Situierung voraus“ (Bredel, 2026, S. 4).</label></li>
+</ul></ul>
+<p><strong>Welche zwei Möglichkeiten sind korrekte indirekte Zitate?</strong></p>
+<ul class="opts" data-ans="g,h"><ul>
+<li data-k="e"><label><input type="checkbox" name="g7" value="e"> <strong>(e)</strong> Bredel (2026, S. 4) kritisiert, dass das Diktieren das Handschreiben in der weiterführenden Schule verdrängt hat.</label></li>
+<li data-k="f"><label><input type="checkbox" name="g7" value="f"> <strong>(f)</strong> Der Basisartikel diskutiert wichtige historische, (lern-)theoretische und praktische Aspekte des Handschreibens, des Tastaturschreibens und des Diktierens (Bredel, 2026, S. 4).</label></li>
+<li data-k="g"><label><input type="checkbox" name="g7" value="g"> <strong>(g)</strong> Bredel (2026, S. 4) begründet, dass fundierte Unterstützungsangebote Wissen über den frühen Schrifterwerb und seine historische Einbettung brauchen.</label></li>
+<li data-k="h"><label><input type="checkbox" name="g7" value="h"> <strong>(h)</strong> Laut Bredel (2026, S. 4) prägen die Schreibbiographien der Schüler:innen deren mediale Schreibfähigkeiten in der weiterführenden Schule wesentlich; deshalb behandelt der Beitrag auch die frühen Lernjahre.</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Schreibe selbst ein direktes und ein indirektes Zitat zu einem anderen Satz des Ausschnitts und tausche dich mit deinem Tandem aus.</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Teil A:</strong> 1 direkt · 2 indirekt · 3 direkt · 4 indirekt.</p>
+<p><strong>Direkte Zitate:</strong> Richtig sind <strong>(b)</strong> und <strong>(d)</strong>.
+- <strong>(a)</strong> ist formal falsch: Die Seitenzahl fehlt. Bei wörtlichen Zitaten ist sie Pflicht.
+- <strong>(c)</strong> ist inhaltlich falsch: Der Wortlaut wurde verändert, steht aber in Anführungszeichen. Was in Anführungszeichen steht, muss exakt dem Original entsprechen.</p>
+<p><strong>Indirekte Zitate:</strong> Richtig sind <strong>(g)</strong> und <strong>(h)</strong>.
+- <strong>(e)</strong> ist inhaltlich falsch: Das steht nicht im Text.
+- <strong>(f)</strong> ist eine <strong>Scheinparaphrase</strong>: fast wörtlich übernommen, aber ohne Anführungszeichen als Paraphrase belegt.</p>
+<p><strong>Wofür was?</strong> Wörtlich zitierst du, wenn der genaue Wortlaut zählt. In Hausarbeiten überwiegen indirekte Zitate. Auch Paraphrasen brauchen einen Beleg, denn auch Ideen sind fremde Gedanken. Zu jedem Verweis gehören drei Bausteine (nach dem Projekt <em>Refairenz</em>): die Einbindung in deinen Text, der Kurzbeleg im Text und der Eintrag im Literaturverzeichnis. Leser:innen müssen an jeder Stelle erkennen können, <strong>wer spricht</strong>: du oder die Quelle.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-8">Frage 8 · Intertextuelle Fehler erkennen</h2>
+<p>Hier ist ein <strong>fiktives wörtliches Zitat</strong>:</p>
+<blockquote>
+<p>„Lesemotivation entsteht im Grundschulalter vor allem dort, wo Kinder erleben, dass sie als Leserinnen und Leser kompetent sind und selbst über ihre Lektüre entscheiden dürfen.“ (Müller, 2019, S. 45)</p>
+</blockquote>
+<p>Vier Studierende haben ihn unterschiedlich in ihre Hausarbeit eingebaut:</p>
+<ul>
+<li><strong>Version 1:</strong> Lesemotivation entsteht im Grundschulalter vor allem dort, wo Kinder erleben, dass sie kompetente Leserinnen und Leser sind und selbst über ihre Lektüre entscheiden dürfen (Müller, 2019, S. 45). <select data-ans="Scheinparaphrase"><option value="">–</option><option>gelungene Paraphrase</option><option>Scheinparaphrase</option><option>Zitat ohne Beleg</option><option>Teilübernahme ohne Anführungszeichen</option></select></li>
+<li><strong>Version 2:</strong> Nach Müller (2019) bleiben Kinder beim Lesen vor allem dann motiviert, wenn sie sich als kompetent erleben und Wahlmöglichkeiten bei der Lektüre haben (S. 45). <select data-ans="gelungene Paraphrase"><option value="">–</option><option>gelungene Paraphrase</option><option>Scheinparaphrase</option><option>Zitat ohne Beleg</option><option>Teilübernahme ohne Anführungszeichen</option></select></li>
+<li><strong>Version 3:</strong> „Lesemotivation entsteht im Grundschulalter vor allem dort, wo Kinder erleben, dass sie als Leserinnen und Leser kompetent sind und selbst über ihre Lektüre entscheiden dürfen.“ <select data-ans="Zitat ohne Beleg"><option value="">–</option><option>gelungene Paraphrase</option><option>Scheinparaphrase</option><option>Zitat ohne Beleg</option><option>Teilübernahme ohne Anführungszeichen</option></select></li>
+<li><strong>Version 4:</strong> Lesemotivation entsteht im Grundschulalter vor allem dort, wo Kinder erleben, dass sie als Leserinnen und Leser kompetent sind. Hinzu kommt der Wunsch nach Selbstbestimmung (Müller, 2019, S. 45). <select data-ans="Teilübernahme ohne Anführungszeichen"><option value="">–</option><option>gelungene Paraphrase</option><option>Scheinparaphrase</option><option>Zitat ohne Beleg</option><option>Teilübernahme ohne Anführungszeichen</option></select></li>
+</ul>
+<p><strong>Ordne zu:</strong> Welche Version ist (a) eine gelungene Paraphrase, (b) eine Scheinparaphrase, (c) ein Zitat ohne Quellenangabe, (d) eine teilweise wörtliche Übernahme ohne Anführungszeichen?</p>
+<p>💬 <strong>Austauschimpuls:</strong> Wo liegt für dich die Grenze zwischen „in eigenen Worten“ und „nur ein paar Wörter ausgetauscht“? Formuliere mit deinem Tandem eine bessere Paraphrase als Version 2.</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><ul>
+<li><strong>Version 1 = (b) Scheinparaphrase:</strong> Der Satz ist fast wörtlich übernommen, aber als Paraphrase belegt – ohne Anführungszeichen.</li>
+<li><strong>Version 2 = (a) gelungene Paraphrase:</strong> eigene Worte und Satzbau, klarer Beleg (Fachbegriffe bleiben natürlich erhalten).</li>
+<li><strong>Version 3 = (c) Zitat ohne Quellenangabe:</strong> Das Zitat ist als solches gekennzeichnet, aber die In-Text-Referenz fehlt.</li>
+<li><strong>Version 4 = (d) teilweise wörtliche Übernahme:</strong> Der erste Teilsatz steht ungekennzeichnet im Originalwortlaut, der Beleg am Ende „deckt“ nur scheinbar alles ab (verwandt mit dem „Bauernopfer/Affixfehler“).</li>
+</ul>
+<p><strong>Erläuterung:</strong> Das Projekt <em>Refairenz</em> (Universität Konstanz und PH Freiburg) hat 82 Haus- und Abschlussarbeiten der PH Freiburg und 252 Arbeiten der Universität Konstanz auf intertextuelle Fehler untersucht. Besonders häufig waren:</p>
+<ol>
+<li><strong>Bibliographieballon</strong> (Literaturverzeichnis enthält deutlich mehr Titel, als im Text vorkommen – laut Studie in etwa 50 % der PH-Arbeiten und rund 41 % der Konstanzer Arbeiten); das Gegenstück ist die <strong>Bibliographieamnesie</strong> (Quelle im Text, aber nicht im Verzeichnis)</li>
+<li>inkorrekte oder uneinheitliche Verwendung von „vgl.“</li>
+<li>fehlende oder falsche Seiten- und Jahresangaben in der In-Text-Referenz</li>
+<li><strong>Unterzitation</strong> (zu wenige, nicht eindeutig zuordenbare Belege)</li>
+<li>uneinheitliche oder unvollständige Literaturangaben</li>
+</ol>
+<p>Weitere Fehlertypen sind u. a. <strong>Scheinparaphrase</strong>, <strong>Second-Hand-Fehler</strong> (Zitat aus zweiter Hand als erste Hand ausgegeben), <strong>Überzitation/Kettenreferenzen</strong> und <strong>Zitationsartenmix</strong>.</p>
+<p><strong>Wichtig zur Einordnung:</strong> Nicht jeder intertextuelle Fehler ist ein Plagiat – „Plagiat“ ist eine <strong>Bewertung</strong> (z. B. durch Prüfende), aber jedes Plagiat ist intertextuell fehlerhaft. Gründe für Fehler sind oft Unkenntnis oder Unsicherheit, nicht Täuschungsabsicht – deshalb lohnt es sich, die Regeln jetzt zu lernen.</p>
+<p><em>Fehlertypen nach: Franzky, Tony/Krämer, Sabrina (2016): Fehlertypologie. Eine Typologie intertextueller Fehler inklusive typischer Beispiele. Projekt Refairenz, S. III. URL: https://www.plagiatspraevention.uni-konstanz.de/projekt/forschung/ (CC BY 4.0). Das Beispiel im Quiz ist eigens erstellt und weicht von den Originalbeispielen ab.</em></p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-9">Frage 9 · Zitierstil APA 7: Autor-Jahr-Belege</h2>
+<p>Grundlage: <a href="https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date">APA Style – Author–date citation system</a>. APA arbeitet im <strong>Autor-Jahr-System</strong>: Kurzbeleg im Text, Vollbeleg im Literaturverzeichnis.</p>
+<p><strong>Teil A – Welche drei Kurzbelege sind nach APA 7 korrekt (deutschsprachige Anwendung)?</strong></p>
+<ul class="opts" data-ans="1,3,6"><ul>
+<li data-k="1"><label><input type="checkbox" name="g8" value="1"> <strong>(1)</strong> (Bredel, 2026)</label></li>
+<li data-k="2"><label><input type="checkbox" name="g8" value="2"> <strong>(2)</strong> (Girgensohn und Sennewald, 2012)</label></li>
+<li data-k="3"><label><input type="checkbox" name="g8" value="3"> <strong>(3)</strong> (Girgensohn &amp; Sennewald, 2012, S. 8)</label></li>
+<li data-k="4"><label><input type="checkbox" name="g8" value="4"> <strong>(4)</strong> (Müller, Schmidt &amp; Weber, 2019)</label></li>
+<li data-k="5"><label><input type="checkbox" name="g8" value="5"> <strong>(5)</strong> (Girgensohn &amp; Sennewald 2012: 8)</label></li>
+<li data-k="6"><label><input type="checkbox" name="g8" value="6"> <strong>(6)</strong> Girgensohn und Sennewald (2012) beschreiben fünf Schreibtypen.</label></li>
+</ul></ul>
+<p><strong>Teil B – Welche zwei Aussagen stimmen?</strong></p>
+<ul class="opts" data-ans="a,d"><ul>
+<li data-k="a"><label><input type="checkbox" name="g9" value="a"> <strong>(a)</strong> Ein wörtliches Zitat braucht die Seitenzahl.</label></li>
+<li data-k="b"><label><input type="checkbox" name="g9" value="b"> <strong>(b)</strong> Jeder Literaturverzeichnis-Eintrag nennt den Verlagsort.</label></li>
+<li data-k="c"><label><input type="checkbox" name="g9" value="c"> <strong>(c)</strong> Wird derselbe Beleg noch einmal gebraucht, schreibt man „ebd.“.</label></li>
+<li data-k="d"><label><input type="checkbox" name="g9" value="d"> <strong>(d)</strong> Sekundärzitate („zitiert nach“) sollten vermieden werden; im Verzeichnis steht dann nur die Quelle, die du tatsächlich gelesen hast.</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Welche Regel wäre dir ohne dieses Quiz nicht aufgefallen?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Teil A:</strong> Richtig sind <strong>(1), (3) und (6)</strong>.
+- <strong>(2)</strong> In Klammern steht bei zwei Autor:innen „&amp;“; im Fließtext steht „und“ (6).
+- <strong>(4)</strong> Ab drei Autor:innen steht schon beim ersten Mal „et al.“: (Müller et al., 2019).
+- <strong>(5)</strong> Zwischen Autor:innen und Jahr steht ein Komma, die Seitenzahl wird mit „S.“ angegeben.</p>
+<p><strong>Teil B:</strong> Richtig sind <strong>(a)</strong> und <strong>(d)</strong>. (b) Seit APA 7 wird der Verlagsort nicht mehr angegeben; dafür gehören DOI oder URL zum Eintrag. (c) „ebd.“ wird im APA-Stil nicht verwendet; der Kurzbeleg wird wiederholt.</p>
+<p><strong>Gut zu wissen:</strong> „vgl.“ sieht APA 7 nicht vor; manche deutschsprachige Leitfäden verwenden es trotzdem. Entscheidend sind Einheitlichkeit und die Vorgabe deiner Dozierenden. Prüfe in Zotero &amp; Co. die Ausgabe des APA-Stils stichprobenartig.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-10">Frage 10 · Gliedern &amp; Strukturieren: Gliederungslogiken</h2>
+<p><strong>Ordne jeder Fragestellung die passende Gliederungslogik zu:</strong></p>
+<p><em>Gliederungslogiken:</em> (a) vom Allgemeinen zum Besonderen · (b) vom Besonderen zum Allgemeinen · (c) Vergleich: Gemeinsamkeiten und Unterschiede · (d) chronologische Gliederung (damals – heute – in Zukunft) · (e) Relation von Teil und Ganzem · (f) Erörterung: Pro – Contra – Synthese</p>
+<p><em>Fragestellungen:</em></p>
+<ol>
+<li>Wie entwickelt sich der Erwerb der Groß- und Kleinschreibung von Klasse 1 bis 4? <select data-ans="d"><option value="">–</option><option>a</option><option>b</option><option>c</option><option>d</option><option>e</option><option>f</option></select></li>
+<li>Wie wird „Natur“ in zwei Gedichten – einem romantischen und einem expressionistischen – dargestellt, und worin gleichen und unterscheiden sich die Darstellungen? <select data-ans="c"><option value="">–</option><option>a</option><option>b</option><option>c</option><option>d</option><option>e</option><option>f</option></select></li>
+<li>Welche Merkmale der Gattung Fabel zeigt eine ausgewählte Fabel – und was folgt daraus für ihren Einsatz im Unterricht? <select data-ans="a"><option value="">–</option><option>a</option><option>b</option><option>c</option><option>d</option><option>e</option><option>f</option></select></li>
+<li>Welche Gemeinsamkeiten zeigen sich in drei Schüler:innentexten zu einer Erzählaufgabe – und was sagen sie über typische Schwierigkeiten beim Erzählen? <select data-ans="b"><option value="">–</option><option>a</option><option>b</option><option>c</option><option>d</option><option>e</option><option>f</option></select></li>
+<li>Wie ist das Kapitel „Schreiben“ eines Deutschlehrwerks in dessen Gesamtkonzeption eingebettet? <select data-ans="e"><option value="">–</option><option>a</option><option>b</option><option>c</option><option>d</option><option>e</option><option>f</option></select></li>
+<li>Soll in der Grundschule das Handschreiben zugunsten des Tastaturschreibens zurückgenommen werden? <select data-ans="f"><option value="">–</option><option>a</option><option>b</option><option>c</option><option>d</option><option>e</option><option>f</option></select></li>
+</ol>
+<p>💬 <strong>Austauschimpuls:</strong> Skizziere für eine der Fragestellungen eine Gliederung bis zur zweiten Ebene (2.1, 2.2 …). Woran erkennt man in den Überschriften die Gliederungslogik?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>1 → (d)</strong> chronologisch (Entwicklungsverlauf) · <strong>2 → (c)</strong> Vergleich · <strong>3 → (a)</strong> vom Allgemeinen (Gattungsmerkmale) zum Besonderen (Einzeltext) und weiter zu den Konsequenzen · <strong>4 → (b)</strong> vom Besonderen (Einzeltexte) zum Allgemeinen (typische Schwierigkeiten) · <strong>5 → (e)</strong> Relation von Teil und Ganzem · <strong>6 → (f)</strong> Erörterung (Pro – Contra – Synthese)</p>
+<p><strong>Erläuterung:</strong> Die Gliederung folgt <strong>der Fragestellung</strong> – nicht umgekehrt. Zusätzlich gibt es <strong>systematische/thematische</strong> Gliederungen (nach Aspekten) und Abfolgen wie <strong>Problem – Analyse – Lösung</strong> oder <strong>Theorie – Methode – Analyse – Diskussion</strong>. Beim Vergleich entscheidest du zwischen <strong>objektweise</strong> (erst Gedicht A, dann Gedicht B, dann Vergleich) und <strong>aspektweise</strong> (Aspekt 1 in A und B, dann Aspekt 2 …).</p>
+<p>Praktische Hinweise:</p>
+<ul>
+<li>Eine erste Gliederung ist <strong>vorläufig</strong> und darf sich beim Schreiben verändern – sie ist ein Arbeitsinstrument.</li>
+<li>Überschriften sollten <strong>inhaltlich aussagekräftig</strong> sein (nicht nur „Hauptteil“).</li>
+<li>Wo ein Punkt 2.1 steht, braucht es auch 2.2.</li>
+<li>Eine grobe <strong>Seitenkalkulation</strong> (wie viele Seiten pro Kapitel?) zeigt früh, ob die Gewichtung stimmt.</li>
+</ul>
+<p>Tipp: <strong>Strukturübernahme</strong> (die Kapitelfolge einer Quelle ungekennzeichnet zu übernehmen) gilt ebenfalls als intertextueller Fehler – entwickelt die Gliederung aus deiner Fragestellung.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-11">Frage 11 · Rohfassung: Textskelett und Kernaussage</h2>
+<p>In der Regel gilt: Ein Absatz behandelt <strong>einen</strong> Gedanken. Im ersten Satz wird die <strong>Kernthese</strong> formuliert (Thema in diesem Absatz). Welche <strong>Aussage</strong> folgt zu diesem Thema? Wie wird diese z. B. durch Beispiele und Argumente erläutert und veranschaulicht? Es folgt eine knappe Zusammenfassung sowie eine Überleitung. <em>(Nach: Esselborn-Krumbiegel, H. (2022). Von der Idee zum Text. UTB GmbH. https://doi.org/10.36198/9783838557854)</em></p>
+<p>Hier sind vier Sätze eines <strong>fiktiven</strong> Absatzes in gemischter Reihenfolge. Welche Funktion hat jeder Satz?</p>
+<ol>
+<li>„Müller (2019, S. 45) beschreibt, dass Kinder gewählte Bücher häufiger zu Ende lesen.“ <select data-ans="Beleg"><option value="">–</option><option>Kernaussage</option><option>Beleg</option><option>Beispiel</option><option>Überleitung</option></select></li>
+<li>„Im nächsten Abschnitt geht es um die Rolle der Eltern.“ <select data-ans="Überleitung"><option value="">–</option><option>Kernaussage</option><option>Beleg</option><option>Beispiel</option><option>Überleitung</option></select></li>
+<li>„Lesemotivation hängt wesentlich davon ab, ob Kinder selbst über ihre Lektüre entscheiden dürfen.“ <select data-ans="Kernaussage"><option value="">–</option><option>Kernaussage</option><option>Beleg</option><option>Beispiel</option><option>Überleitung</option></select></li>
+<li>„Das zeigt sich etwa in Klassen, in denen Kinder aus einer Lesekiste frei wählen.“ <select data-ans="Beispiel"><option value="">–</option><option>Kernaussage</option><option>Beleg</option><option>Beispiel</option><option>Überleitung</option></select></li>
+</ol>
+<p>💬 <strong>Austauschimpuls:</strong> Schreibe zu zweit drei Kernsätze für ein Kapitel „Forschungsstand“. Ergeben sie schon einen roten Faden?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Reihenfolge im Absatz:</strong> Satz 3 (Kernaussage) → Satz 1 (Beleg) → Satz 4 (Beispiel) → Satz 2 (Überleitung).</p>
+<p><strong>Textskelett (nach Esselborn-Krumbiegel):</strong> Du formulierst die <strong>Kernsätze</strong> deiner Absätze in der geplanten Reihenfolge, setzt sie mit Abständen in ein leeres Dokument – das ist das Skelett eines Kapitels – und <strong>füllst</strong> es dann Absatz für Absatz mit Belegen, Erläuterungen und Beispielen. So arbeitest du auf Kapitel- und Abschnittsebene und behältst das Argument im Blick.</p>
+<p><strong>Tipps für die Rohfassung:</strong> Schreibe zügig, der Feinschliff kommt später. Notiere Belege sofort (Autor, Jahr, Seite). Markiere Lücken („[Beleg suchen]“) und halte nicht an. Du musst nicht mit der Einleitung beginnen.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-12">Frage 12 · Überarbeiten: Inhalt – Sprache – Formales</h2>
+<p>Du überarbeitest in drei Durchgängen: <strong>A</strong> Inhalt und Argumentationslogik · <strong>B</strong> Sprache und Stil · <strong>C</strong> Formales. Ordne jede Aufgabe einem Durchgang zu:</p>
+<ol>
+<li>Rechtschreibung, Zeichensetzung, Layout, Seitenzahlen und Verzeichnisse prüfen <select data-ans="C"><option value="">–</option><option>A</option><option>B</option><option>C</option></select></li>
+<li>Verschachtelte Sätze und Nominalstil auflösen <select data-ans="B"><option value="">–</option><option>A</option><option>B</option><option>C</option></select></li>
+<li>Einen Absatz verschieben, weil die Argumentation sonst springt <select data-ans="A"><option value="">–</option><option>A</option><option>B</option><option>C</option></select></li>
+<li>Jeden Kurzbeleg im Text mit dem Literaturverzeichnis abgleichen (nichts zu viel, nichts fehlt) <select data-ans="C"><option value="">–</option><option>A</option><option>B</option><option>C</option></select></li>
+<li>Wiederholungen und Füllwörter streichen; Fachbegriffe einheitlich verwenden <select data-ans="B"><option value="">–</option><option>A</option><option>B</option><option>C</option></select></li>
+<li>Prüfen, ob der Schluss die Fragestellung aus der Einleitung tatsächlich beantwortet <select data-ans="A"><option value="">–</option><option>A</option><option>B</option><option>C</option></select></li>
+</ol>
+<p>💬 <strong>Austauschimpuls:</strong> Warum ist die Reihenfolge A → B → C sinnvoll? Was passiert, wenn du zuerst an Kommas und Formulierungen feilst?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>A:</strong> 3, 6 · <strong>B:</strong> 2, 5 · <strong>C:</strong> 1, 4</p>
+<p>Überarbeitet wird <strong>von groß nach klein</strong>. Wer zuerst Sätze poliert, die später gestrichen oder verschoben werden, verschwendet Zeit. Nützliche Methoden: Abstand gewinnen (mindestens eine Nacht); laut lesen oder ausdrucken; <strong>Rückwärtsgliederung</strong> (nur die Kernsätze hintereinander lesen – ergibt sich ein roter Faden?); <strong>Beleg-Check</strong> (so vermeidest du Bibliographieballon und -amnesie, Frage 8); eine Checkliste je Durchgang.</p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-13">Frage 13 · Schreibstrategien: Wie schreibe ich am liebsten?</h2>
+<p>Menschen schreiben unterschiedlich. Girgensohn und Sennewald (2012, S. 8) unterscheiden fünf Schreibtypen: <strong>Planer:in</strong>, <strong>Drauflosschreiber:in</strong>, <strong>nichtlineare:r Schreiber:in</strong>, <strong>Mehrversionen-Schreiber:in</strong> und <strong>Recherche-/Überarbeitungs-Schreiber:in</strong>.</p>
+<p><strong>Beantworte die Fragen erst für dich, dann im Tandem:</strong></p>
+<ol>
+<li>Wie beginnst du eine Hausarbeit: Planst und ordnest du zuerst, oder fängst du an zu schreiben und entdeckst beim Schreiben, was du sagen willst?</li>
+<li>Was tust du, wenn du nicht weiterkommst: Bleibst du an der Stelle, oder springst du zu einem anderen Teil des Textes?</li>
+<li>Schreibst du eine Fassung und verbesserst sie, oder schreibst du mehrere vollständige Fassungen und verwirfst vieles?</li>
+<li>Recherchierst und liest du gern sehr lange, bevor du zu schreiben beginnst?</li>
+<li>Welchem Typ ähnelst du am meisten (Mischformen sind normal)? Welchen Vorteil hast du dadurch bei der Hausarbeit?</li>
+<li>Welche Falle kennst du von dir: zu spät anfangen, den roten Faden verlieren, Unliebsames aufschieben, zu viele Fassungen, sich in der Recherche verlieren?</li>
+<li>Welche <strong>eine</strong> Gegenmaßnahme probierst du bei der nächsten Hausarbeit aus?</li>
+</ol>
+<details><summary><b>Erläuterung & Ideen (es gibt keine „richtige“ Lösung)</b></summary><div class="sol"><p>Schreibtypen sind <strong>Tendenzen, keine Schubladen</strong> und können je nach Aufgabe wechseln. Wer seine Tendenz kennt, kann gezielt gegensteuern:</p>
+<ul>
+<li><strong>Planer:in:</strong> Planung zeitlich begrenzen („Ab Tag X wird geschrieben“); früh mit Freewriting oder Textskelett beginnen (Frage 11).</li>
+<li><strong>Drauflosschreiber:in:</strong> Fragestellung sichtbar aufhängen; nach der ersten Fassung eine Rückwärtsgliederung erstellen (Frage 12); Überarbeitungszeit fest einplanen.</li>
+<li><strong>Nichtlineare:r Schreiber:in:</strong> Liste aller Textteile mit Status führen; unliebsame Teile zuerst terminieren.</li>
+<li><strong>Mehrversionen-Schreiber:in:</strong> Fassungen mit Datum benennen; feste Fristen für Fassung 1, 2, 3.</li>
+<li><strong>Recherche-/Überarbeitungs-Schreiber:in:</strong> Zeitbudget für die Recherche festlegen; die Fragestellung als Filter nutzen; früh Kernsätze schreiben.</li>
+</ul>
+<p><em>Schreibtypen nach Girgensohn, K. &amp; Sennewald, N. (2012). Schreiben lehren, Schreiben lernen: Eine Einführung. Einführungen Germanistik. WBG, S. 8. Die Ideen sind Vorschläge für dieses Quiz.</em></p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-14">Frage 14 · KI im Schreibprozess: erlaubt, sinnvoll – und verantwortungsvoll?</h2>
+<p>Drei Standards gelten auch mit KI: <strong>Redlichkeit</strong> (Fremdes und KI-Generiertes kenntlich machen), <strong>Begründungspflicht</strong> (belegen, so genau wie möglich) und <strong>Transparenz</strong> (nachvollziehbar machen, woher etwas stammt und wo du KI genutzt hast). Nicht angegebene KI-Unterstützung kann als <strong>Täuschungsversuch</strong> gelten.</p>
+<p><strong>Teil A – Ampel:</strong> Ordne jede Situation zu: Grün = erlaubt (meist unproblematisch) · Gelb = nur nach Prüfung der Regeln und mit Dokumentation · Rot = nicht erlaubt</p>
+<ol>
+<li>Du lädst einen fremden Aufsatz als PDF, den Entwurf einer Kommilitonin oder Interview- bzw. Schüler:innendaten in ein KI-Tool hoch. <select data-ans="Rot"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du „besprichst“ mit einem KI-Tool deine Fragestellung und Gliederungsidee und lässt dir ein Feedback auf deine Gliederungsidee geben. <select data-ans="Gelb"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du lässt dir Suchbegriffe für die Literaturrecherche vorschlagen. <select data-ans="Grün"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du lässt eine KI einen Aufsatz zusammenfassen, statt ihn selbst zu lesen und zu exzerpieren. <select data-ans="Rot"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du lässt dir von einer KI schwierige Fachbegriffe erklären, ohne Text zu übernehmen, und überprüfst anschließend selbst anhand der Fachliteratur. <select data-ans="Grün"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du lässt eine KI Absätze formulieren, übernimmst sie und machst das nicht kenntlich. <select data-ans="Rot"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du lässt dir Themenschwerpunkte aus deinen eigenen Notizen identifizieren, um eine Struktur zu finden. <select data-ans="Grün"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+<li>Du übernimmst Literaturangaben oder Zitate aus einem KI-Tool, ohne sie zu prüfen. <select data-ans="Rot"><option value="">–</option><option>Grün</option><option>Gelb</option><option>Rot</option></select></li>
+</ol>
+<p><strong>Teil B – Fünf Prüffragen:</strong> Wende sie auf Situation 2 und 4 an:</p>
+<ul>
+<li><strong>Erlaubt?</strong> Ist KI-Nutzung hier bei meiner Betreuungsperson oder meinem Institut erlaubt bzw. erwünscht?</li>
+<li><strong>Eigenleistung?</strong> Erfülle ich trotz KI das Kriterium der Eigenständigkeit und trage ich die Verantwortung für meinen Text?</li>
+<li><strong>Rechte und Daten?</strong> Schütze ich eigene und fremde Gedankenleistungen und Daten (Urheberrecht, Datenschutz)?</li>
+<li><strong>Angemessen?</strong> Behindert die KI den Auf- oder Ausbau einer Kompetenz, die ich erwerben möchte?</li>
+<li><strong>Effizient?</strong> Hilft sie wirklich, oder verlagere ich den Aufwand nur (Prompts schreiben, Ergebnisse prüfen)?</li>
+</ul>
+<p><strong>Teil C – KI-Verzeichnis:</strong> Schreibe für Situation 2 eine Zeile für das KI-Verzeichnis im Anhang: <em>KI-Tool · Verwendungszweck · betroffene Textteile</em>.</p>
+<p>💬 <strong>Austauschimpuls:</strong> Wo ziehst du die Grenze zwischen „Schreibpartner“ und „Ghostwriter“? Welche Fähigkeit willst du in dieser Hausarbeit <strong>selbst</strong> aufbauen, damit sie dir später im Lehrberuf zur Verfügung steht?</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Teil A:</strong> Grün: <strong>3, 5, 7</strong> · Gelb: <strong>2</strong> · Rot (nicht erlaubt): <strong>1, 4, 6, 8</strong></p>
+<ul>
+<li><strong>Zu 3, 5 und 7 (grün):</strong> KI darf dich bei Recherche, Begriffsklärung und Strukturfindung unterstützen – sie ist <strong>nicht von vornherein verboten</strong>. Entscheidend ist, dass du die Ergebnisse selbst prüfst (z. B. anhand der Fachliteratur) und deine Eigenleistung erhalten bleibt.</li>
+<li><strong>Zu 2 (gelb):</strong> Feedback zu eigenen Ideen ist je nach Modul, Prüfungsordnung oder Hochschulrichtlinie geregelt. <strong>Dokumentiere</strong> die Nutzung und gib nur Daten ein, an denen du die Rechte hast.</li>
+<li><strong>Zu 1 (rot, nicht erlaubt):</strong> Gib nur Texte, Daten und Informationen ein, an denen du Urheberrechte oder ein ausdrückliches Nutzungsrecht hast. Online-Tools können Eingaben speichern oder als Trainingsdaten weiterverwenden – gehe äußerst sparsam mit personenbezogenen, vertraulichen und unveröffentlichten Daten um. Das betrifft im Lehramt besonders <strong>Schüler:innendaten</strong>.</li>
+<li><strong>Zu 4 (rot, nicht erlaubt):</strong> Hier geht es um den <strong>Lernprozess</strong>: Verstehen entsteht beim Lesen und Exzerpieren (Frage 6). KI-Zusammenfassungen können fehlerhaft sein und das Urheberrecht berühren.</li>
+<li><strong>Zu 6 (rot, nicht erlaubt):</strong> Nicht angegebene KI-Unterstützung gilt als Täuschungsversuch. An vielen Stellen ist das Übernehmen ausformulierter Passagen ohnehin nicht zulässig.</li>
+<li><strong>Zu 8 (rot, nicht erlaubt):</strong> Die Verantwortung für Aussagen, Übersetzungen, Zitate und Quellenangaben bleibt bei dir.</li>
+</ul>
+<p><strong>Teil B (Beispiel zu Situation 4):</strong> Sie scheitert meist an „Angemessen?“ (Lesekompetenz) und „Eigenleistung?“.</p>
+<p><strong>Teil C (Beispiel):</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>KI-Tool</th>
+<th>Verwendungszweck</th>
+<th>betroffene Textteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(Name des Tools)</td>
+<td>Rückfragen zur Schärfung der Fragestellung und Diskussion der Gliederung</td>
+<td>Kap. 1, S. 2–3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Einsatzszenarien:</strong> KI als <strong>Ghostwriter</strong> (Texte, Gliederungen, Quellen vorgeben lassen) ist zu vermeiden. Der <strong>reflektierte Einsatz zur Entlastung</strong> (Werkzeug oder Tutor) und <strong>zur Erweiterung des eigenen Denkens</strong> (Schreibpartner, z. B. Gegenargumente zur eigenen Gliederung) sind je nach Vorgabe möglich. <strong>Sechs Risikobereiche</strong> großer Sprachmodelle (Weidinger et al., 2022): Diskriminierung und Vorurteile, Datenlecks, falsche Informationen, Missbrauch, Täuschung durch scheinbar „menschliche“ Dialogsysteme sowie Umwelt- und soziale Folgen.</p>
+<p><strong>Dokumentation:</strong> Ein <strong>KI-Verzeichnis im Anhang</strong> (Tool, Zweck, betroffene Textteile) und die <strong>Eigenständigkeitserklärung</strong>. <strong>Vor der Abgabe:</strong> Verzeichnis vollständig? Fremdes und KI-Generiertes gekennzeichnet? Zitate und Quellen selbst geprüft? Keine fremden oder vertraulichen Daten eingegeben? Erklärung unterschrieben?</p>
+<p><em>Grundlage in eigenen Worten: Merkblatt „Umgang mit KI-gestützten Tools“ der PH Karlsruhe (Institut für deutsche Sprache und Literatur), Prüfschema eines Leitfadens der Universität Klagenfurt, Rowland (2023), Weidinger et al. (2022). Prüfe, ob die Vorgaben für deine Institution gelten.</em></p></div></details>
+<hr />
+</section><section class="q"><h2 id="frage-15">Frage 15 · Zeitplanung: Strategien für Plan- und Zeitmanagement</h2>
+<p><strong>Teil A – Welches Ziel ist SMART</strong> (spezifisch, messbar, akzeptiert, realistisch, terminiert)?</p>
+<ul class="opts" data-ans="B"><ul>
+<li data-k="A"><label><input type="radio" name="g10" value="A"> <strong>A)</strong> Morgen lese ich ein bisschen für die Hausarbeit.</label></li>
+<li data-k="B"><label><input type="radio" name="g10" value="B"> <strong>B)</strong> Morgen Vormittag fertige ich bis 12 Uhr ein Exzerpt zu Bredel (2026) an – in drei Pomodoro-Einheiten.</label></li>
+<li data-k="C"><label><input type="radio" name="g10" value="C"> <strong>C)</strong> In drei Tagen schreibe ich die ganze Hausarbeit.</label></li>
+<li data-k="D"><label><input type="radio" name="g10" value="D"> <strong>D)</strong> Irgendwann nächste Woche schreibe ich die Einleitung.</label></li>
+</ul></ul>
+<p><strong>Teil B – Eisenhower-Prinzip:</strong> A wichtig und dringend · B wichtig, nicht dringend · C nicht wichtig, dringend · D nicht wichtig, nicht dringend</p>
+<ol>
+<li>Die Betreuungsperson erwartet bis morgen deine Gliederung. <select data-ans="A"><option value="">–</option><option>A</option><option>B</option><option>C</option><option>D</option></select></li>
+<li>Du stellst Literatur für Kapitel 3 zusammen (Kapitel 3 ist in vier Wochen dran). <select data-ans="B"><option value="">–</option><option>A</option><option>B</option><option>C</option><option>D</option></select></li>
+<li>Im Gruppenchat wird bis heute Abend eine Antwort zur Terminabstimmung für den Spieleabend erwartet. <select data-ans="C"><option value="">–</option><option>A</option><option>B</option><option>C</option><option>D</option></select></li>
+<li>Du änderst zum fünften Mal die Schriftart des Deckblatts. <select data-ans="D"><option value="">–</option><option>A</option><option>B</option><option>C</option><option>D</option></select></li>
+</ol>
+<p><strong>Teil C – Welche dieser Strategien nutzt du schon? Welche zwei probierst du aus?</strong></p>
+<ul class="opts"><ul>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Aufstehen, Anziehen, Arbeitsenergie</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Anfangen, den Ball ins Rollen bringen, Startaktivität festlegen</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Zeitplanung</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> To-do-Listen, Priorisierung, Terminierung</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Arbeitsplatz: Handy entfernen, offline arbeiten, „Bitte nicht stören“, Nein-Sagen, Ohrstöpsel, Trennung vom Restleben</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Pausen machen, Energie fokussieren, Bewegung</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Tracking, Monitoring</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Tagesabschlussritual</label></li>
+<li data-k=""><label><input type="checkbox" name="g11" value=""> Selbstbelohnung</label></li>
+</ul></ul>
+<p>💬 <strong>Austauschimpuls:</strong> Plane rückwärts: Abgabe in acht Wochen, 12–15 Seiten. Verteile die Schritte (Rahmen klären, Fragestellung, Recherche und Lesen, Gliederung, Rohfassung, Überarbeitung, Puffer) auf die Wochen.</p>
+<div class="chkbar"><button type="button" class="chk">Antwort prüfen</button> <button type="button" class="rst">Zurücksetzen</button> <span class="res" role="status"></span></div><details><summary><b>Lösung & Erläuterung</b></summary><div class="sol"><p><strong>Teil A:</strong> <strong>B)</strong> ist SMART. <strong>S</strong>pezifisch (ein Exzerpt zu einem Text), <strong>m</strong>essbar (es liegt vor), <strong>a</strong>kzeptiert (achte auf innere Widerstände; formuliere „Ich möchte …“), <strong>r</strong>ealistisch (kleine Ziele, nicht „in drei Tagen die ganze Hausarbeit“), <strong>t</strong>erminiert (bis 12 Uhr).</p>
+<p><strong>Teil B – Eisenhower:</strong> 1 → A (sofort selbst erledigen) · 2 → B (terminieren und persönlich erledigen) · 3 → C (delegieren bzw. kurz halten) · 4 → D (nicht bearbeiten). Eine Hausarbeit ist oft <strong>wichtig, aber nicht dringend</strong> (B) – die Falle: Was nicht dringend wirkt, wird verschoben, bis es dringend wird.</p>
+<p><strong>ABC-Methode:</strong> Als Soll gelten etwa 65 % A-Aufgaben (sehr wichtig), 20 % B (wichtig) und 15 % C (Kleinkram, Routine). Tatsächlich verbringen viele etwa 15 % mit A und 65 % mit C. Beispiel für einen sinnvollen Tag: 3 Std. A, 1 Std. B, 45 Min. C.</p>
+<p><strong>Pomodoro-Technik:</strong> 25 Minuten fokussiert arbeiten, 5 Minuten Pause; nach vier Durchgängen eine längere Pause.</p>
+<p><strong>Teil C – kurz erklärt:</strong> <strong>Arbeitsenergie:</strong> ein fester Start in den Tag. <strong>Anfangen:</strong> Lege eine kleine Startaktivität fest (z. B. nur das letzte Exzerpt noch einmal lesen). <strong>Zeitplanung:</strong> rückwärts ab der Abgabe, mit Puffern. <strong>To-do-Listen:</strong> priorisieren und terminieren. <strong>Arbeitsplatz:</strong> Ablenkungen ausschalten, klare Grenzen setzen. <strong>Pausen:</strong> bewusst einplanen, Bewegung hilft. <strong>Tracking:</strong> Fortschritt festhalten, damit du ihn siehst. <strong>Tagesabschlussritual:</strong> den nächsten Schritt notieren, dann Feierabend. <strong>Selbstbelohnung:</strong> Teilziele feiern.</p>
+<p><em>SMART-Beispiele, ABC-Methode und Strategienliste nach Workshopunterlagen; bitte Quelle ergänzen.</em></p></div></details>
+<hr />
+<h2>Schlussimpuls für das Plenum</h2>
+<p>Notiere für dich: <strong>(1)</strong> Was war deine überraschendste Erkenntnis? <strong>(2)</strong> Welchen Fehler hättest du in einer früheren Arbeit vermutlich gemacht? <strong>(3)</strong> Welche <em>eine</em> Sache setzt du als Erstes in deiner Hausarbeit um?</p>
+<hr />
+<h2>Quellen und Weiterlesen</h2>
+<p><strong>Buchgrundlage</strong>
+- Esselborn-Krumbiegel, H. (2021). <em>Die erste Hausarbeit FAQ</em> (2., aktualisierte Aufl.). UTB. https://doi.org/10.36198/9783838557458
+- Esselborn-Krumbiegel, H. (2022). <em>Von der Idee zum Text</em>. UTB GmbH. https://doi.org/10.36198/9783838557854
+- Esselborn-Krumbiegel, H. (2015). <em>Tipps und Tricks bei Schreibblockaden</em>. Schöningh (Textskelett).</p>
+<p><strong>Zitieren und intertextuelle Fehler</strong>
+- Franzky, T., &amp; Krämer, S. (2016). <em>Fehlertypologie. Eine Typologie intertextueller Fehler inklusive typischer Beispiele</em>. Projekt Refairenz, S. III. https://www.plagiatspraevention.uni-konstanz.de/projekt/forschung/ (CC BY 4.0)
+- Voss, R. (2026). <em>Wissenschaftliches Arbeiten mit KI</em>. UTB GmbH. https://doi.org/10.36198/9783838588629
+- Bredel, U. (2026). Handschreiben – Tastaturschreiben – Diktieren. <em>Praxis Deutsch, 53</em>(315), 4–11.
+- Meyer, H. (2019). Was, wie und wozu zitieren? – Zitierkonventionen erkunden. In C. Wymann, <em>Praxishandbuch Schreibdidaktik</em> (S. 142–146). Budrich. Arbeitsblatt (Stand Okt. 2021): Schreibzentrum Universität Konstanz, CC BY 4.0.
+- FernUniversität in Hagen: <em>ZitFit – Zitieren nach APA 7th</em>. https://www.fernuni-hagen.de/public/zitfit/teil_1/kapitel2/index.html
+- American Psychological Association. (2019). <em>Author–date citation system</em>. APA Style. https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date
+- Universität Siegen: <em>APA-Zitierregeln – Kurzübersicht</em>. https://www.uni-siegen.de/files/default/media/documents/2026-07/apa_zitierregeln_kurzuebersicht.pdf</p>
+<p><strong>Schreibstrategien</strong>
+- Girgensohn, K., &amp; Sennewald, N. (2012). <em>Schreiben lehren, Schreiben lernen: Eine Einführung</em>. Einführungen Germanistik. WBG.</p>
+<hr />
+<h2>Hinweise zur Nutzung und Lizenz</h2>
+<ul>
+<li><strong>Stand der Recherche:</strong> November 2026. KI-Tools, APA-Hinweise und Hochschulrichtlinien ändern sich schnell – bitte vor Veröffentlichung gegenprüfen.</li>
+<li><strong>Einarbeitung fremder Materialien:</strong> Die Beschreibung der Fehlertypen beruht auf dem Material des Projekts <em>Refairenz</em> (CC BY 4.0). Beispieltexte im Quiz sind frei erfunden und wurden gegenüber den Originalbeispielen verändert; Inhalte wurden gekürzt und für das Quiz neu zusammengestellt.</li>
+<li><strong>Lizenzvorschlag für dieses Quiz:</strong> CC BY 4.0 – Margret Mundorf, memoscript, 2026.</li>
+</ul></section>
+</main>
+<footer>fit4yourhausarbeit · Quiz zum Einstieg ins wissenschaftliche Schreiben</footer>
+<script>
+
+document.querySelectorAll('.chkbar').forEach(function(bar){
+ var sec=bar.closest('section');
+ bar.querySelector('.chk').addEventListener('click',function(){
+  var tot=0,ok=0;
+  sec.querySelectorAll('ul.opts[data-ans]').forEach(function(ul){
+   var ans=ul.dataset.ans.split(','),good=true;
+   ul.querySelectorAll('li').forEach(function(li){
+    var i=li.querySelector('input'),should=ans.indexOf(li.dataset.k)>-1;
+    li.className=i.checked&&should?'ok':(i.checked?'bad':(should?'miss':''));
+    if(i.checked!==should)good=false;});
+   tot++;if(good)ok++;});
+  sec.querySelectorAll('select').forEach(function(s){tot++;if(s.value===s.dataset.ans){ok++;s.className='ok'}else s.className='bad'});
+  bar.querySelector('.res').textContent=(ok===tot?'Alles richtig! ':ok+' von '+tot+' Teilaufgaben richtig. ')+'Die Erläuterung ist jetzt geöffnet.';
+  var d=sec.querySelector('details');if(d)d.open=true;});
+ bar.querySelector('.rst').addEventListener('click',function(){
+  sec.querySelectorAll('input').forEach(function(i){i.checked=false});
+  sec.querySelectorAll('li,select').forEach(function(e){e.className=''});
+  sec.querySelectorAll('select').forEach(function(x){x.value=''});
+  bar.querySelector('.res').textContent='';});
+});
+
+document.getElementById('tg').addEventListener('click',function(){
+  var ds=document.querySelectorAll('details'),open=Array.prototype.some.call(ds,function(d){return d.open});
+  ds.forEach(function(d){d.open=!open});
+});
+</script>
+</body>
+</html>
